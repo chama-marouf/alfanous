@@ -232,6 +232,7 @@ class Raw():
             "Romanized": list(self.QSE.list_values("sura"))
         }
         self._chapters = list(self.QSE.list_values("chapter"))
+        self._topics = list(self.QSE.list_values("topic"))
         self._defaults = self.DEFAULTS
         self._flags = self.DEFAULTS["flags"].keys()
         self._fields = Fields
@@ -248,6 +249,7 @@ class Raw():
             "hints": self._hints,
             "surates": self._surates,
             "chapters": self._chapters,
+            "topics": self._topics,
             "defaults": self._defaults,
             "flags": self._flags,
             "fields": self._fields,
